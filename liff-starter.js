@@ -7,15 +7,14 @@ window.onload = function (e) {
 function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         var msg = document.getElementById('bchcode').value;
+        
+        
+        
+        
         liff.sendMessages([{
             type: 'text',
             text: msg
         }
-//        , {
-//             type: 'sticker',
-//             packageId: '2',
-//             stickerId: '144'
-//         }
           ]).then(function () {
             liff.closeWindow();
         }).catch(function (error) {
