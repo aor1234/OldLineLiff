@@ -10,11 +10,13 @@ function initializeApp(data) {
         liff.sendMessages([{
             type: 'text',
             text: msg
-        }, {
-            type: 'sticker',
-            packageId: '2',
-            stickerId: '144'
-        }]).then(function () {
+        }
+//        , {
+//             type: 'sticker',
+//             packageId: '2',
+//             stickerId: '144'
+//         }
+          ]).then(function () {
             liff.closeWindow();
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
